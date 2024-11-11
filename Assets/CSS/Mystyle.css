@@ -2,14 +2,20 @@ body{
     padding-top:25px;
     padding-right:50px;
     padding-left:50px;
+    font-family:'Roboto', sans-serif;
+    font-weight:400;
+    font-style:normal;
 }
 
 h1{
     text-align:center;
     font-size:12em;
+    font-weight:900;
+    font-style:italic;
 }
 h2{
     color:cadetblue;
+    font-weight:900;
 }
 img {
     width:600px;
@@ -23,5 +29,6 @@ iframe {
 .caption {
     font-size:0.5rem;
     text-align:center;
+    font-weight:100;
 }
 
