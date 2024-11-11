@@ -1,5 +1,5 @@
 h1{
-    text-align: center;
+    text-align:center;
 }
 h2{
     color:cadetblue;
@@ -9,11 +9,11 @@ img {
 }
 iframe {
     width:600px;
-    height: auto;
+    height:auto;
     margin:auto;
 }
 .caption {
-    font-size: smaller;
+    font-size:smaller;
     text-align:center;
 }
 
