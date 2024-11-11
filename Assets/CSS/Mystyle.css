@@ -1,3 +1,7 @@
+body{
+    margin:7% 15%;
+}
+
 h1{
     text-align:center;
 }
@@ -6,6 +10,7 @@ h2{
 }
 img {
     width:600px;
+    margin:auto;
 }
 iframe {
     width:600px;
