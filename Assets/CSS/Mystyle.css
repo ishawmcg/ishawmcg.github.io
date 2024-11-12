@@ -6,6 +6,7 @@ body{
     font-family:"Roboto", Helvetica, sans-serif;
     font-weight:400;
     font-style:normal;
+    background-color: whitesmoke;
 }
 
 h1{
@@ -40,6 +41,24 @@ a:hover {
     color:aqua;
 }
 
+a.buttonlink:link {
+    color:blanchedalmond;
+    padding:20px;
+    background-color:black;
+    text-align:center;
+    display:inline-block;
+}
+
+a.buttonlink:visited {
+    color:rgb(255, 183, 94);
+    background-color: rgb(39, 39, 39);
+}
+
+a.buttonlink:hover{
+    color:cadetblue;
+    box-shadow: 5px 5px cadetblue;
+}
+
 iframe {
     width:600px;
     margin:auto;
@@ -61,6 +80,8 @@ video {
     font-size:0.9rem;
     text-align:center;
     font-weight:100;
-    color:brown;
+    color:whitesmoke;
     white-space:normal;
+    background-color:black;
+    padding:15px;
 }
