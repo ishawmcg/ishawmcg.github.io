@@ -16,17 +16,40 @@ h1{
     font-family:"Roboto", sans-serif;
     font-weight:900;
     font-style:italic;
+    letter-spacing:5px;
 }
 h2{
     color:cadetblue;
     font-family:"Faculty Glyphic", sans-serif;
     font-weight:900;
+    word-spacing:50%;
 }
 img {
     width:600px;
     margin:auto;
 }
+
+a:link {
+    color:blue;
+    font-style:italic;
+}
+
+a:visited {
+    color:blueviolet;
+}
+
+a:hover {
+    color:aqua;
+}
+
 iframe {
+    width:600px;
+    margin:auto;
+    height:auto;
+    min-height:350px;
+}
+
+video {
     width:600px;
     margin:auto;
     height:auto;
@@ -41,4 +64,5 @@ iframe {
     text-align:center;
     font-weight:100;
     color:brown;
+    white-space:normal;
 }
