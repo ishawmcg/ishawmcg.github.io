@@ -1,103 +1,161 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Roboto:ital,wght@0,100;0,400;0,900;1,400;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap');
 
-body{
-    margin:15px 50px;
-    font-family:"Roboto", Helvetica, sans-serif;
-    font-weight:400;
-    font-style:normal;
-    background-color: whitesmoke;
+/* DEFAULT */
+body {
+    font-family: "DM Sans", Helvetica, Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    background: #f0f8ff;
+}
+
+h1, h2 {
+    font-family:"DM Serif Display", serif;
+}
+
+h3 {
+    font-size: 19px !important;
+}
+
+h4, h5 {
+    padding-top: 3%;
+    margin-bottom: 1px;
 }
 
 
-h1{
-    text-align:center;
-    font-size:9em;
-    font-family:"Roboto", sans-serif;
-    font-weight:900;
-    font-style:italic;
-    letter-spacing:-17px;
-}
-h2{
-    color:cadetblue;
-    font-family:"Faculty Glyphic", sans-serif;
-    font-weight:900;
-    word-spacing:50%;
-}
-img {
-    width:600px;
-    margin:auto;
-}
 
+/* LINK STYLING */
 a:link {
     color:blue;
-    font-style:italic;
 }
 
 a:visited {
-    color:blueviolet;
+    color:brown;
 }
 
 a:hover {
-    color:aqua;
+    opacity: 80%;
 }
 
-a.buttonlink:link {
-    color:blanchedalmond;
-    padding:20px;
-    background-color:black;
-    text-align:center;
-    display:inline-block;
+a:active {
+    opacity:60%;
 }
 
-a.buttonlink:visited {
-    color:rgb(255, 183, 94);
-    background-color: rgb(39, 39, 39);
+/* Carousel menu links */
+a:link.icon-link{
+    color:#000;
+    opacity: 100%;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 36px;
+    transition: all .2s ease-in-out;
+    -moz-transition:all .2s ease-in;
+    -o-transition:all .2s ease-in;
+    -webkit-transition:all .2s ease-in;
 }
 
-a.buttonlink:hover{
-    color:cadetblue;
-    box-shadow: 5px 5px cadetblue;
+a:hover.icon-link{
+    opacity: 60%;
 }
 
-iframe, video {
-    width:600px;
-    margin:auto;
+a img {
+    width:25px;
+    height:25px;
+    margin:1%;
+}
+
+a:hover img {
+    transform:translate(0.25rem);
+    transition:all .2s ease-in-out;
+
+}
+
+.icon-link {
+    text-decoration: none;
+    color:#000;
+}
+
+/* SECTIONS */
+section {
+    height:100%;
+    min-height:100vh;
+    width:auto;
+    background-color: #f0f8ff;
+    padding-bottom: 5%;
+    display:flex;
+    align-items: center;
+}
+
+
+/* MAIN PAGE */
+#main {
+    background-color: #f0f8ff;
+}
+
+.caroimage {
+    height:400px;
+}
+
+.carousel-text {
+    color:#000;
+    float:right;
+}
+
+/* ABOUT PAGE */
+
+
+.profilepic {
     height:auto;
-    min-height:350px;
+    width:100%;
+    margin-bottom:15px;
 }
 
-#pdf {
-    height:900px;
-    margin:auto;
-}
-.caption {
-    font-size:0.9rem;
-    text-align:center;
-    font-weight:100;
-    color:whitesmoke;
-    white-space:normal;
-    background-color:black;
-    padding:15px;
-}
-/* Breakpoint at 1000px to keep the header from cutting off at the edges*/
-@media (max-width:1000px) {
-    h1 {font-size: 7rem}
+.highlights {
+    height:400px;
+    max-width:500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
-/*Breakpoint set at 700px to avoid cutting off the iframe and image items*/
-@media (max-width:700px) {
-    body {
-        margin:5px 10px;
-        font-size:smaller;
-    }
-    h1 {
-        font-size:4rem;
-        letter-spacing:-10px;
-    }
-    iframe, img, video, #pdf {
-        width:100%;
-        height:100%;
-    }
+.rating {
+    float:inline-end;
+}
+.dot {
+    height: 12px;
+    width: 12px;
+    background-color: none;
+    border:2px solid #000;
+    border-radius: 50%;
+    display: inline-block;
+  }
+.dot.fill {
+    background-color:#000;
+}
+
+
+/* EDUCATION PAGE */ 
+
+td.info, tr.info, .info span, span.info {
+    font-family: "DM Mono", monospace;
+    font-weight: 300;
+    font-style: normal;
+    font-size:small;
+    display: block;
+}
+
+
+table {
+    margin-bottom:15px;
+    width:100%;
+}
+
+/* VOLUNTEERING SECTION */
+
+
+.card-columns {
+    display:inline-block;
 }
 
