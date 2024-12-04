@@ -23,45 +23,87 @@
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 
-
         <!--Home Page-->
         <section id="main">
           <div class="container">
-              
+
+            <button class="btn btn-dark side-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Menu</button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <h5 id="offcanvasRightLabel">Menu</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="nav nav-pills nav-stacked" data-bs-dismiss="offcanvas">
+                  <li onclick="topFunction()" title="Main">
+                    <a class="nav-link" href="#main">Home</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#About">About</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#Education">Education</a> 
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#Experience">Experience</a> 
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#Volunteering">Volunteering</a> 
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#Contact">Contact Me</a> 
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+
+            <button onclick="topFunction()" id="toTop" class="scroll-up" title="Main">Top</button>
+
+
+
             <div class="row justify-content-center align-items-end">
-                            
 
                 <!--Carousel Slides-->
                 <!--I made this before you said not to be too fancy. Borrowed the JQuery from Bootstrap carousel on W3Schools-->
-                <div class="col-12 col-sm-6 col-md-6">
+                <div class="col-12 col-sm-6 col-md-3">
                   <h1>Isabel Shaw</h1>
                     <div id="frontpagecarousel" class="carousel slide">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
                             <img src="Assets/IMG/VotM.jpg" class="caroimage" alt="">
+                             <!--<div class="carousel-text">
+                              <h5>Experience</h5>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc varius nisl est, sed venenatis ipsum tempus eu. Vestibulum id risus ut magna sodales imperdiet ac et massa. Quisque eleifend sodales lacus non vestibulum.</p>
+                            </div>-->
                           </div>
                           <div class="carousel-item">
                             <img src="Assets/IMG/McGillUniversity.png" class="caroimage" alt="McGill University Campus">
+                             <!--<div class="carousel-text">
+                              <h5>Experience</h5>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc varius nisl est, sed venenatis ipsum tempus eu. Vestibulum id risus ut magna sodales imperdiet ac et massa. Quisque eleifend sodales lacus non vestibulum.   </p>
+                            </div>-->
                           </div>
                           <div class="carousel-item">
                             <img src="Assets/IMG/StratfordFestivalTheatreTour.pdf.png" class="caroimage" alt="First page of Stratford Festival Theatre Tour memorandum for participants from the TMI Archive">
-                            <div class="carousel-text">
+                             <!--<div class="carousel-text">
                               <h5>Experience</h5>
-                              <p>Libraries, </p>
-                            </div>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc varius nisl est, sed venenatis ipsum tempus eu. Vestibulum id risus ut magna sodales imperdiet ac et massa. Quisque eleifend sodales lacus non vestibulum.   </p>
+                            </div>-->
                           </div>
                           <div class="carousel-item">
                             <img src="Assets/IMG/VotM.jpg" class="caroimage" alt="Isabel Shaw holding a children's book.">
-                            <div class="carousel-text d-none d-md-block">
-                              <h5>Volunteering</h5>
-                              <p>Some of the places I spend my time.</p>
-                            </div>
+                             <!--<div class="carousel-text">
+                              <h5>Experience</h5>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc varius nisl est, sed venenatis ipsum tempus eu. Vestibulum id risus ut magna sodales imperdiet ac et massa. Quisque eleifend sodales lacus non vestibulum.   </p>
+                            </div>-->
                           </div>
                         </div>
-
                     </div>
                 </div>
-  <!--Carousel Menu with Bootstrap formatting
+
+        <!--Carousel Menu with Bootstrap formatting
                 Hovering over each link causes the carousel to turn.
                 -->
                 <div class="col-12 col-md-4">
@@ -100,7 +142,7 @@
         <!--About Page-->
         <section id="About">
             <div class="container">
-            <div class="row">
+            <div class="row ">
                 <div class="row justify-content-center align-items-end">
                 <div class="col-6 col-md-2">
                     <img src="Assets/IMG/VotM.jpg" class="profilepic">
@@ -110,6 +152,7 @@
                         <p>I am a MISt student working with whatever i want and doing whatever i want.there's a lot to be said for mischief. i like science and history and organizing things.</p>
                 </div>
                 </div>
+               
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                 <h3>Highlights</h3>
@@ -118,10 +161,6 @@
                       <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end navbar-dark">
                         <nav class="nav nav-pills flex-column">
                           <a class="nav-link bg-dark" href="#skills">Skills</a>
-                     <!--    <nav class="nav nav-pills flex-column">
-                            <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
-                            <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
-                          </nav>--> 
                           <a class="nav-link" href="#item-2">Item 2</a>
                           <a class="nav-link" href="#item-3">Design</a>
                           <nav class="nav nav-pills flex-column">
@@ -326,15 +365,15 @@
                       </div>
                     </div>
                 </div>
-                </div>
+                </div> 
             </div>
             </div>
 
             </div>
         </section>
-
+<!--font sizing fix, psychology of fontsizing, make the h1 bigger, contact form connect to email defaults-->
         <section id="Education">
-            <div class="container" >
+            <div class="container">
                 <div class="row justify-content-center">
 
                     <div class="col-12 col-lg-2">
@@ -597,26 +636,47 @@
       </section>
 
 
-        <script>
-            $(document).ready(function(){
+<script>
+  $(document).ready(function(){
                 
-              // Carousel Menu
-              // based on W3Schools example
-              $( "#abtbutton" ).hover(function(){
-                $("#frontpagecarousel").carousel(0);
-              });
-              $( "#educbutton" ).hover(function(){
-                $("#frontpagecarousel").carousel(1);
-              });
-              $( "#expbutton" ).hover(function(){
-                $("#frontpagecarousel").carousel(2);
-              });
-              $( "#contbutton" ).hover(function(){
-                $("#frontpagecarousel").carousel(3);
-              });
-                
-            });
-            </script>
-    </body>
+    // Carousel Menu
+    // based on W3Schools example
+    $( "#abtbutton" ).hover(function(){
+      $("#frontpagecarousel").carousel(0);
+    });
+    $( "#educbutton" ).hover(function(){
+      $("#frontpagecarousel").carousel(1);
+    });
+    $( "#expbutton" ).hover(function(){
+      $("#frontpagecarousel").carousel(2);
+    });
+    $( "#contbutton" ).hover(function(){
+      $("#frontpagecarousel").carousel(3);
+    });    
+      });
+
+  // Get the button
+  let topbutton = document.getElementById("toTop");
+
+
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      topbutton.style.display = "block";
+      } else {
+      topbutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+</body>
 
 </html>
