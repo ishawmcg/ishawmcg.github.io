@@ -11,12 +11,16 @@ body {
     background: #f0f8ff;
 }
 
+h1 {
+    font-size:50px;
+}
+
 h1, h2 {
     font-family:"DM Serif Display", serif;
 }
 
 h3 {
-    font-size: 19px !important;
+    font-size: 19px;
 }
 
 h4, h5 {
@@ -111,11 +115,9 @@ section {
     margin-bottom:15px;
 }
 
-.highlights {
-    height:400px;
-    max-width:500px;
-    overflow-y: scroll;
-    overflow-x: hidden;
+#skills {
+    max-width:900px;
+    margin:auto;
 }
 
 .rating {
@@ -134,13 +136,15 @@ section {
 }
 
 
+
+
 /* EDUCATION PAGE */ 
 
 td.info, tr.info, .info span, span.info {
     font-family: "DM Mono", monospace;
     font-weight: 300;
     font-style: normal;
-    font-size:small;
+    font-size:16px;
     display: block;
 }
 
