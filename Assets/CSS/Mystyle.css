@@ -85,6 +85,11 @@ a:hover img {
     color:#000;
 }
 
+.carousel-item {
+    width:100%;
+    max-width:500px;
+}
+
 /* SECTIONS */
 section {
     height:100%;
@@ -218,4 +223,12 @@ table {
     display: inline-block;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
+}
+
+section#contact {
+    background-image: url("/Assets/IMG/bluebg.jpg");
+}
+.businesscard {
+    background-color: #f0f8ff;
+    margin:100px;
 }
