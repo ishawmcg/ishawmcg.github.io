@@ -11,9 +11,7 @@ body {
     background: #f0f8ff;
 }
 
-h1 {
-    font-size:50px;
-}
+
 
 h1, h2 {
     font-family:"DM Serif Display", serif;
@@ -121,7 +119,7 @@ section {
 }
 
 .rating {
-    float:inline-end;
+    display:block;
 }
 .dot {
     height: 12px;
