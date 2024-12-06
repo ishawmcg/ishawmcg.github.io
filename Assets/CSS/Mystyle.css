@@ -39,7 +39,7 @@ a:link {
 }
 
 a:visited {
-    color:teal;
+    color: rgb(4, 109, 184);
 }
 
 a:hover {
@@ -100,7 +100,6 @@ section {
     display:flex;
     align-items: center;
 }
-
 
 /* MAIN PAGE */
 #main {
@@ -201,7 +200,7 @@ table {
   }
   
  .scroll-up:hover {
-    background-color: #555;
+    background-color: grey ;
   }
   
   /* CONTACT PAGE */
@@ -224,11 +223,18 @@ table {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
 }
+.backdrop {
+    width:100%;
+    height:100%;
+    background: #5ba0dd url("../IMG/debora-pilati-dOG0z4-gqp0-unsplash.jpg") no-repeat fixed top;
+    background-size:cover;
+ /*   background-blend-mode: screen;*/
 
-section#contact {
-    background-image: url("/Assets/IMG/bluebg.jpg");
 }
+
 .businesscard {
     background-color: #f0f8ff;
-    margin:100px;
+    width:100%;
+    padding:200px;
+    opacity: 1;
 }
