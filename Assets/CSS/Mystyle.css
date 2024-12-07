@@ -7,7 +7,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 19px;
+    font-size: 18px;
     background: #f0f8ff;
 }
 
@@ -15,11 +15,16 @@ h1, h2 {
     font-family:"DM Serif Display", serif;
 }
 
+h2 {
+    font-size:25px;
+}
+
 h3 {
     font-size: 20px;
 }
 
-h4, h5 {
+h4 {
+    font-size:19px;
     padding-top: 3%;
     margin-bottom: 1px;
 }
@@ -29,14 +34,7 @@ p {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size:19px;
-
-}
-
-colors {
-color:#046db8;
-color:#5ba0dd;
-    
+    font-size:18px;
 }
 
 /* LINK STYLING */
@@ -87,8 +85,25 @@ a.nav-link {
  .scroll-up:hover {
     background-color: grey ;
   }
+  
+/* MAIN PAGE */
 
-/* CAROUSEL MENU */
+/* Carousel */
+.carousel-item {
+    width:100%;
+    max-width:500px;
+}
+
+.caroimage {
+    height:400px;
+}
+
+.carousel-text {
+    color:#000;
+    float:right;
+}
+
+/* Carousel menu */
 a:link.icon-link, a:visited.icon-link {
     color:#000;
     opacity: 100%;
@@ -123,12 +138,6 @@ a:hover img {
     color:#000;
 }
 
-/* CAROUSEL */
-.carousel-item {
-    width:100%;
-    max-width:500px;
-}
-
 /* SECTIONS */
 section {
     height:100%;
@@ -140,15 +149,7 @@ section {
     align-items: center;
 }
 
-/* MAIN PAGE */
-.caroimage {
-    height:400px;
-}
 
-.carousel-text {
-    color:#000;
-    float:right;
-}
 
 /* ABOUT PAGE */
 .profilepic {
@@ -165,6 +166,7 @@ section {
 .rating {
     display:block;
 }
+
 .dot {
     height: 12px;
     width: 12px;
@@ -173,6 +175,7 @@ section {
     border-radius: 50%;
     display: inline-block;
   }
+  
 .dot.fill {
     background-color:#000;
 }
@@ -180,12 +183,11 @@ section {
 /* EDUCATION PAGE */ 
 td.info, tr.info, .info span, span.info {
     font-family: "DM Mono", monospace;
-    font-weight: 300;
+    font-weight: 200;
     font-style: normal;
     font-size:16px;
     display: block;
 }
-
 
 table {
     margin-bottom:15px;
@@ -197,7 +199,7 @@ table {
     display:inline-block;
 }
   
-  /* CONTACT PAGE */
+/* FAVICON */
 .fa {
   font-size: 30px;
   margin: 10px;
@@ -217,6 +219,7 @@ table {
     -webkit-font-smoothing: antialiased;
 }
 
+  /* CONTACT PAGE */
 .backdrop {
     width:100%;
     height:100%;
@@ -224,9 +227,8 @@ table {
     background-size:cover;
 }
 
-.businesscard {
+.contactcard {
     background-color: #f0f8ff;
     width:100%;
     padding:150px;
-    opacity: 1;
 }
