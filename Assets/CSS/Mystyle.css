@@ -33,13 +33,19 @@ p {
 
 }
 
+colors {
+color:#046db8;
+color:#5ba0dd;
+    
+}
+
 /* LINK STYLING */
 a:link {
-    color:blue;
+    color:#046db8;
 }
 
 a:visited {
-    color: rgb(4, 109, 184);
+    color: #5ba0dd;
 }
 
 a:hover {
@@ -51,14 +57,13 @@ a:active {
 }
 
 /* OFFCANVAS MENU */
-
 .side-menu {
     position:fixed;
     top:0;
     right:0;
 }
 
-.nav-link {
+a.nav-link {
     font-size:24px;
 }
 
@@ -84,7 +89,7 @@ a:active {
   }
 
 /* CAROUSEL MENU */
-a:link.icon-link{
+a:link.icon-link, a:visited.icon-link {
     color:#000;
     opacity: 100%;
     font-family: "DM Serif Display", serif;
@@ -136,10 +141,6 @@ section {
 }
 
 /* MAIN PAGE */
-#main {
-    background-color: #f0f8ff;
-}
-
 .caroimage {
     height:400px;
 }
@@ -201,7 +202,6 @@ table {
   font-size: 30px;
   margin: 10px;
   text-align: center;
-  color:aliceblue;
   text-decoration: none;
   opacity: 0.75;
   transition: ease .7s;
@@ -216,6 +216,7 @@ table {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
 }
+
 .backdrop {
     width:100%;
     height:100%;
@@ -226,6 +227,6 @@ table {
 .businesscard {
     background-color: #f0f8ff;
     width:100%;
-    padding:200px;
+    padding:150px;
     opacity: 1;
 }
