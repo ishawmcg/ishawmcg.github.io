@@ -32,7 +32,6 @@
   <!--Home Page-->
   <section id="main">
     <div class="container">
-      
       <!--Offcanvas Menu Button-->
       <!--All Offcanvas menu elements hidden from screenreaders-->
       <button class="btn btn-dark side-menu fa fa-bars" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" alt="Open Menu" title="Open Menu" aria-hidden="true"></button>
@@ -73,11 +72,11 @@
       
       
       <!--Carousel-->
-      <!--I made this before you said not to be too fancy. Borrowed the JQuery from Bootstrap carousel on W3Schools-->
-      <div class="row justify-content-center">
+      <!--Borrowed the JQuery from Bootstrap carousel on W3Schools-->
+      <div class="rows">
         
         <!--Carousel Slides-->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="smallcol">
           <div id="frontpagecarousel" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item">
@@ -105,7 +104,7 @@
         <!--Carousel Menu with Bootstrap formatting
           Hovering over each link causes the carousel to turn.
         -->
-        <nav class="col-12 col-sm-4 col-md-6">
+        <nav class="bigcol">
           <ul> 
             <header class="text-center text-sm-start">
               <h1 class="display-1">Isabel Shaw</h1> 
@@ -153,24 +152,26 @@
 <!--example websites for portfolio reasons-->
   <section id="Websites">
     <div class="container">
-
-        <div class="row justify-content-center row-cols-1">  
-          <hr>
-          <div class="col-12 col-lg-2">
-            <a href="https://zoeshaw.com/" target="_blank"><h3>Zoe Shaw</h3></a>
-            <p>Made with Bootstrap Studio
-              <span class="info">
-                <span>Live personal website</span>
-              </span>
-            </p>
-          </div>
+    <h2>Designs</h2>
+        <div class="rows">  
           <div class="col-12 col-lg-6 portfolio">
             <a href="https://zoeshaw.com/" target="_blank"><img src="Assets/IMG/ZoeShawWebsiteExample.png" alt="Screenshot from the homepage of Zoe Shaw's personal website."></a>
           </div>
+          
+          <div class="note">
+            <a href="https://zoeshaw.com/" target="_blank"><h3>Zoe Shaw</h3></a>
+            <p>Made with Bootstrap Studio
+              <span class="info">Live personal website</span>
+            </p>
+          </div>
         </div>
-      <div class="row justify-content-center row-cols-1">   
-        <hr>
-          <div class="col-12 col-lg-2">
+        
+      <div class="rows">  
+        <div class="col-12 col-lg-6 portfolio">
+            <a href="https://www.figma.com/design/MoPbiQqCilLKerK2Y0QroP/MaryShelley?t=PAYERdrI1R35si8Q-1" target="_blank"><img src="Assets/IMG/FrankensteinWebsiteExample.png" alt="Screenshot from prototype website."></a>
+        </div>
+      
+          <div class="note">
             <a href="https://www.figma.com/proto/MoPbiQqCilLKerK2Y0QroP/MaryShelley?t=IS1NfHhZPm2NJ5Gj-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&node-id=2-3&starting-point-node-id=2%3A3" target="_blank"><h3>Frankenstein</h3></a>
             <p>Made with Figma
               <span class="info">
@@ -179,166 +180,38 @@
               </span>
             </p>
           </div>
-          <div class="col-12 col-lg-6 portfolio">
-            
-            <a href="https://www.figma.com/design/MoPbiQqCilLKerK2Y0QroP/MaryShelley?t=PAYERdrI1R35si8Q-1" target="_blank"><img src="Assets/IMG/FrankensteinWebsiteExample.png" alt="Screenshot from prototype website."></a>
-          </div>
         </div>
-      <div class="row justify-content-center row-cols-1">   
-        <hr>
-          <div class="col-12 col-lg-2">
-            <a href="https://www.figma.com/design/O0JwJsE6qeBdX9d3Zuhj0s/Shakespeare?t=PAYERdrI1R35si8Q-1" target="_blank"><h3>Shakespeare's Tragedies</h3></a>
+      <div class="rows">
+          <div class="col-12 col-lg-6 portfolio"><a href="https://www.figma.com/design/O0JwJsE6qeBdX9d3Zuhj0s/Shakespeare?t=PAYERdrI1R35si8Q-1" target="_blank">
+            <img src="Assets/IMG/ShakespeareWebsiteExample.png" alt="Screenshot from Figma showing minimalist layouts for old plays."></a>
+          </div>
+          
+        <div class="note"><a href="https://www.figma.com/design/O0JwJsE6qeBdX9d3Zuhj0s/Shakespeare?t=PAYERdrI1R35si8Q-1" target="_blank">
+            <h3>Shakespeare's Tragedies</h3>
             <p>Made with Figma
               <span class="info">
                 <span>Graphic design examples.</span>
               </span>
-            </p>
+            </p></a>
           </div>
-          <div class="col-12 col-lg-6 portfolio">
-            <a href="https://www.figma.com/design/O0JwJsE6qeBdX9d3Zuhj0s/Shakespeare?t=PAYERdrI1R35si8Q-1" target="_blank"><img src="Assets/IMG/ShakespeareWebsiteExample.png" alt="Screenshot from Figma showing minimalist layouts for old plays."></a>
           </div>
-        </div>
-    </div>
+        
+
   </section>
   
   <!--About Page-->
   <section id="About">
     <div class="container">
-      <div class="row ">
-        <div class="row justify-content-center align-items-end">
-          <div class="col-6 col-md-2">
-            <img src="Assets/IMG/VotM.jpg" class="profilepic" alt="Isabel Shaw holding a children's book">
-          </div>
-          <div class="col-12 col-lg-6">
+      <div class="row">
+        <div class="rows align-items-end">
+          <div class="note">
             <h2>About Me</h2>
             <p>Enthusiastic information professional experienced in digital archives, metadata management, and audiovisual editing. Passionate about better information access through well-structured systems and engaging digital content.</p>
           </div>
         </div>
         
-        <div id="skills" class="row justify-content-center row-cols-1 row-cols-sm-2 row-cols-lg-3">
-          
-          <h3>Highlights</h3>  
-          <div class="col">
-            <h4>Cataloguing</h4>
-            <table>
-              <tr>
-                <td>Dewey Decimal Classification</td>
-                <td class="rating" style="min-width:85px;">
-                  <span class="dot fill"></span>
-                  <span class="dot fill"></span>
-                  <span class="dot fill"></span>
-                  <span class="dot fill"></span> 
-                </td>
-              </tr>
-              <tr>
-                <td>MARC</td>
-                <td class="rating">
-                  <span class="dot fill"></span>
-                  <span class="dot fill"></span>
-                  <span class="dot"></span>
-                  <span class="dot"></span> 
-                </td>
-              </tr>
-              <tr>
-                <td>Dublin Core</td>
-                <td class="rating">
-                  <span class="dot fill"></span>
-                  <span class="dot fill"></span>
-                  <span class="dot fill"></span>
-                  <span class="dot"></span> 
-                </td>
-              </tr>
-              <tr>
-                <td>XML</td>
-                <td class="rating">
-                  <span class="dot fill"></span>
-                  <span class="dot fill"></span>
-                  <span class="dot"></span>
-                  <span class="dot"></span> 
-                </td>
-              </tr>
-              <tr>
-                <td>Library of Congress Classification</td>
-                <td class="rating">
-                  <span class="dot fill"></span>
-                  <span class="dot fill"></span>
-                  <span class="dot"></span>
-                  <span class="dot"></span> 
-                </td>
-              </tr>
-            </table>
-          </div>
-          
-          <div class="col">
-            <h4>Library Software</h4>
-            <table>
-              <tr>
-                <td>MARCEdit</td>
-                <td class="rating">
-                  <span class="dot fill"></span>
-                  <span class="dot fill"></span>
-                  <span class="dot fill"></span>
-                  <span class="dot"></span> 
-                </td>
-              </tr>
-              <tr>
-                <td>Apollo</td>
-                <td class="rating">
-                  <span class="dot fill"></span>
-                  <span class="dot fill"></span>
-                  <span class="dot fill"></span>
-                  <span class="dot"></span> 
-                </td>
-              </tr>
-              <tr>
-                <td>LibGuides</td>
-                <td class="rating">
-                  <span class="dot fill"></span>
-                  <span class="dot fill"></span>
-                  <span class="dot fill"></span>
-                  <span class="dot"></span> 
-                </td>
-              </tr>
-              <tr>
-                <td>Zotero</td>
-                <td class="rating">
-                  <span class="dot fill"></span>
-                  <span class="dot fill"></span>
-                  <span class="dot fill"></span>
-                  <span class="dot fill"></span> 
-                </td>
-              </tr>
-              <tr>
-                <td>JSTOR</td>
-                <td class="rating">
-                  <span class="dot fill"></span>
-                  <span class="dot fill"></span>
-                  <span class="dot fill"></span>
-                  <span class="dot fill"></span> 
-                </td>
-              </tr>
-              <tr>
-                <td>WorldCat</td>
-                <td class="rating">
-                  <span class="dot fill"></span>
-                  <span class="dot fill"></span>
-                  <span class="dot fill"></span>
-                  <span class="dot"></span> 
-                </td>
-              </tr>
-              <tr>
-                <td>Omeka</td>
-                <td class="rating">
-                  <span class="dot fill"></span>
-                  <span class="dot fill"></span>
-                  <span class="dot"></span>
-                  <span class="dot"></span> 
-                </td>
-              </tr>
-            </table>
-          </div>
-          
-          <div class="col">
+        <div id="skills" class="rows">
+          <div class="colmn">
             <h4>Data Management</h4>
             <table>
               <tr>
@@ -351,14 +224,14 @@
                 </td>
               </tr>
               <tr>
-                <td>MySQL</td>
-                <td class="rating" >
+                <td>Power BI</td>
+                <td class="rating">
                   <span class="dot fill"></span>
                   <span class="dot fill"></span>
                   <span class="dot fill"></span>
                   <span class="dot"></span> 
                 </td>
-              </tr>
+              </tr>              
               <tr>
                 <td>Regular Expressions</td>
                 <td class="rating" >
@@ -405,8 +278,8 @@
                 </td>
               </tr>
               <tr>
-                <td>MySQLWorkbench</td>
-                <td class="rating">
+                <td>MySQL</td>
+                <td class="rating" >
                   <span class="dot fill"></span>
                   <span class="dot fill"></span>
                   <span class="dot fill"></span>
@@ -414,7 +287,7 @@
                 </td>
               </tr>
               <tr>
-                <td>Power BI</td>
+                <td>MySQLWorkbench</td>
                 <td class="rating">
                   <span class="dot fill"></span>
                   <span class="dot fill"></span>
@@ -434,12 +307,12 @@
             </table>
           </div>
           
-          <div class="col">
+          <div class="colmn">
             <h4>Design</h4>
             <table>
               <tr>
                 <td>HTML/CSS</td>
-                <td class="rating">
+                <td class="rating" >
                   <span class="dot fill"></span>
                   <span class="dot fill"></span>
                   <span class="dot fill"></span>
@@ -448,7 +321,7 @@
               </tr>
               <tr>
                 <td>VS Code</td>
-                <td class="rating">
+                <td class="rating" >
                   <span class="dot fill"></span>
                   <span class="dot fill"></span>
                   <span class="dot fill"></span>
@@ -457,7 +330,7 @@
               </tr>
               <tr>
                 <td>Figma</td>
-                <td class="rating">
+                <td class="rating" >
                   <span class="dot fill"></span>
                   <span class="dot fill"></span>
                   <span class="dot fill"></span>
@@ -513,10 +386,10 @@
           </div>
           
           
-          <div class="col">
+          <div class="colmn">
             <h4>Soft Skills</h4>
             <table>
-                            <tr>
+              <tr>
                 <td>Technical Writing</td>
                 <td class="rating">
                   <span class="dot fill"></span>
@@ -582,14 +455,14 @@
             </table>
           </div>
         </div>
-        
+      </div>
       </div>
     </section> <!--About section end-->
     
     <!--Education section-->
     <section id="Education">
       <div class="container">
-        <div class="row justify-content-center">
+        <div class="rows">
           
           <div class="col-12 col-lg-2">
             <h2>Education</h2>
@@ -611,11 +484,12 @@
                   <ul>
                     <li>Winner of the Bernard Anderson Ower Award</li>
                     <li>CGPA:3.88</li>
+                    <li>Relevant coursework: Biomedical Librarianship, Web Design, Database Design.</li>
                   </ul>
                 </td>
               </tr>
             </table> 
-            <hr>
+           
             
             <table>
               <tr>
@@ -638,7 +512,7 @@
                 </td>
               </tr>
             </table> 
-            <hr>
+            
             
             <table>
               <tr>
@@ -662,7 +536,7 @@
       <div class="container">
         
         <h2 class="text-center">Experience</h2>
-        <div class="row justify-content-center row-cols-1">    
+        <div class="rows row-cols-1">    
    
           <div class="col-12 col-lg-2">
             <h3>Library Assistant</h3>
@@ -679,10 +553,11 @@
 <li>Delivered regular reports and presentations to communicate project progress, findings, and data-related updates to team members.</li>
 <li>Applied advanced Excel formulas to organize, analyze, and manage information efficiently.</li>
             </ul>
+           
           </div>
         </div>
-        <div class="row justify-content-center row-cols-1">    
-        <hr>
+        <div class="rows row-cols-1">    
+       
           <div class="col-12 col-lg-2">
             <h3>Practicum</h3>
             <p>Maude Abbott Medical Museum
@@ -693,17 +568,16 @@
             </p>
           </div>
           <div class="col-12 col-lg-6">
-            
             <ul>
               <li>Drafted acquisitions policy and protocol, accession policy, sustainable collection management policy, and various other document management protocols.</li>
 <li>Created plan for data cleaning and protocols for data entry.</li>
 <li>Improved accessibility on Drupal website with alt-text creation and updated overall design to conform with WAVE accessibility standards.</li>
             </ul>
+            
           </div>
         </div>
         
-        <div class="row justify-content-center row-cols-1">     
-        <hr>
+        <div class="rows row-cols-1">     
           <div class="col-12 col-lg-2">
             <h3>Video Editor</h3>
             <p>Freelance
@@ -714,17 +588,17 @@
             </p>
           </div>
           <div class="col-12 col-lg-6">
-            
             <ul>
               <li>Designing short promotional videos for TikTok, Facebook, YouTube, and Instagram Reels.</li>
               <li>Editing, color grading, audio correcting footage in Davinci Resolve.</li>
               <li>Organized and maintained digital file systems with metadata tagging on both Mac and Windows systems to ensure long-term access and efficient retrieval.</li>
             </ul>
+         
           </div>
         </div>
         
-        <div class="row justify-content-center">  
-          <hr>
+        <div class="rows">  
+  
           <div class="col-12 col-lg-2">
             <h3>Digital Archives Coordinator</h3>
             <p>Thomas More Institute
@@ -735,18 +609,17 @@
             </p>
           </div>
           <div class="col-12 col-lg-6">
-            
             <ul>
               <li>Developed project plan for digitization of the Institute's archives for display on Omeka.</li>
               <li> Created and implemented the metadata scheme based off of Dublin Core.</li>
               <li> Scanned and cataloged 100+ books, flyers, and handwritten letters.</li>
               <li><a href="https://thomasmoreinstitute.omeka.net/" target="_blank">View the project here</a> </li>
             </ul>
+           
           </div>
         </div>
         
-        <div class="row justify-content-center">
-         <hr>
+        <div class="rows">
           <div class="col-12 col-lg-2">
             <h3>Stagiaire en archives </h3>
             <p>Dorval City Hall Archives
@@ -757,15 +630,15 @@
             </p>
           </div>
           <div class="col-12 col-lg-6">
-           
             <ul>
               <li>Coordinated with a small French-language team to update and log records with the electronic database according to government standards.</li>
             </ul>
+           
           </div>
         </div>
         
         
-        <div class="row justify-content-center">                  <hr>
+        <div class="rows">                 
           <div class="col-12 col-lg-2">
             <h3>Library Intern</h3>
             <p>Sacred Heart High School
@@ -792,7 +665,7 @@
         <h2 class="text-center">Volunteering</h2>
         
         <!--each volunteering piece has their own row-->
-        <div class="row justify-content-center">                  
+        <div class="rows">                  
           <div class="col-12 col-lg-8">
             <h3>Library Volunteer</h3>
             <p>MiniBiblioPlus
@@ -809,9 +682,9 @@
           </div>
         </div>
         
-        <div class="row justify-content-center">                  
+        <div class="rows">                  
           <div class="col-12 col-lg-8">
-            <hr>
+            
             <h3>Documentation and Archives Officer</h3>
             <p>McGill Information Studies Student Association (MISSA)
               <span class="info">
@@ -822,9 +695,9 @@
           </div>
         </div>
         
-        <div class="row justify-content-center">                  
+        <div class="rows">                  
           <div class="col-12 col-lg-8">
-            <hr>
+           
             <h3>Digital Transcriber</h3>
             <p>Smithsonian Digital Volunteers
               <span class="info">
@@ -835,9 +708,9 @@
           </div>
         </div>
         
-        <div class="row justify-content-center">                  
+        <div class="rows">                  
           <div class="col-12 col-lg-8">
-            <hr>
+          
             <h3>Proofreader</h3>
             <p>Digital Proofreaders
               <span class="info">
@@ -848,9 +721,9 @@
           </div>
         </div>
         
-        <div class="row justify-content-center">                  
+        <div class="rows">                  
           <div class="col-12 col-lg-8">
-            <hr>
+       
             <h3>Copyeditor</h3>
             <p>Bandersnatch Newspaper
               <span class="info">
