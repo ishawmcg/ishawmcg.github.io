@@ -514,9 +514,8 @@ td, th {
     
     nav#CV {
         display:block;
-
         position:fixed;
-        bottom:50px;
+        top:50px;
     }
 
 }
